@@ -11,7 +11,7 @@ const Detail = () => {
 
   useEffect(() => {
     axios
-      .get(`deploy-pokemon-production-8925.up.railway.app/pokemons/${id}`)
+      .get(`https://deploy-pokemon-tawny.vercel.app//pokemons/${id}`)
       .then((response) => setDetailPKM(response.data)) //yo accedo al id del pokemon a detallar
       .catch((error) => console.error(error));
     
