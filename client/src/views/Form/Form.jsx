@@ -52,7 +52,7 @@ const Form = () => {
     e.preventDefault();
     try {
       if (Object.keys(errors).length === 0) {
-        await axios.post("http://localhost:3001/pokemons/", pokeData);
+        await axios.post("/pokemons/", pokeData);
         alert("Pokemon creado correctamente");
       } else {
         alert("Falta Información o falta completar campos");

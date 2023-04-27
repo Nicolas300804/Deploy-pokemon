@@ -11,7 +11,7 @@ const Detail = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3001/pokemons/${id}`)
+      .get(`/pokemons/${id}`)
       .then((response) => setDetailPKM(response.data)) //yo accedo al id del pokemon a detallar
       .catch((error) => console.error(error));
     
