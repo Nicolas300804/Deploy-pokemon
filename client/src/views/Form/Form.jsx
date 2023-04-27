@@ -52,7 +52,7 @@ const Form = () => {
     e.preventDefault();
     try {
       if (Object.keys(errors).length === 0) {
-        await axios.post("/pokemons/", pokeData);
+        await axios.post("deploy-pokemon-production-8925.up.railway.app/pokemons/", pokeData);
         alert("Pokemon creado correctamente");
       } else {
         alert("Falta Información o falta completar campos");
