@@ -10,7 +10,7 @@ export const GET_TYPES = "GET_TYPES";
 
 export const getPokemons = () => {
   return async function (dispatch) {
-    const apiPokemon = await axios.get("pokemons");
+    const apiPokemon = await axios.get("/pokemons");
     const pokemons = apiPokemon.data;
     dispatch({
       type: GET_POKEMONS,
@@ -83,7 +83,7 @@ export const getNamePokemons = (name) => {
 export const getTypes = () => {
   return async function (dispatch) {
       const apiData = await axios.get(
-          "types"
+          "/types"
       );
       const types = apiData.data;
       dispatch({ type: GET_TYPES, payload: types })
